@@ -327,3 +327,23 @@ a:focus-visible,button:focus-visible,summary:focus-visible,select:focus-visible 
 .contact-address{color:#fff;font:700 14px/1.4 Arial,sans-serif;text-decoration:underline;text-underline-offset:3px;overflow-wrap:anywhere}
 .contact-method span.contact-address{text-decoration:none}
 @media(max-width:560px){.contact-methods{display:grid;grid-template-columns:1fr}.contact-method{min-width:0}}
+
+/* One shared support and contact destination at the end of every page */
+.universal-contact{padding:clamp(42px,6vw,76px) 0;background:var(--leaf);color:var(--paper)}
+.contact-support-layout{display:grid;grid-template-columns:1fr 1fr;gap:clamp(28px,5vw,64px);align-items:center}
+.contact-support-copy{padding:clamp(20px,4vw,42px);background:var(--sun);color:var(--ink);border:2px solid var(--ink);box-shadow:7px 8px 0 var(--ink);transform:rotate(-.5deg)}
+.contact-support-copy .eyebrow{color:#4c3f22}
+.contact-support-copy h2{font-size:clamp(36px,5vw,58px);line-height:1.03;margin:0 0 16px}
+.contact-support-copy p:not(.eyebrow){font:17px/1.5 Arial,sans-serif}
+.contact-support-cta{background:var(--berry);color:#fff;border-color:var(--berry);margin-top:8px}
+.contact-support-details h3{font-size:clamp(26px,3vw,36px);margin:0 0 10px}
+.contact-support-details>p{font:16px/1.5 Arial,sans-serif}
+.contact-support-details .eyebrow{color:var(--sun)}
+.contact-methods{display:flex;flex-wrap:wrap;gap:12px;margin-top:20px}
+.contact-method{display:flex;flex-direction:column;align-items:flex-start;gap:9px;min-width:230px;padding:13px 14px;border:1px solid #ffffff80;border-radius:8px;background:#ffffff12}
+.universal-contact .contact-method .button{margin:0;background:var(--sun);color:var(--ink);border:2px solid var(--ink)}
+.universal-contact .contact-method .contact-phone-button{background:#e9aaca}
+.contact-address{color:#fff;font:700 14px/1.4 Arial,sans-serif;text-decoration:underline;text-underline-offset:3px;overflow-wrap:anywhere}
+.contact-method span.contact-address{text-decoration:none}
+@media(max-width:800px){.contact-support-layout{grid-template-columns:1fr}.contact-support-copy{max-width:700px}.contact-support-details{max-width:700px}}
+@media(max-width:560px){.contact-methods{display:grid;grid-template-columns:1fr}.contact-method{min-width:0}}
