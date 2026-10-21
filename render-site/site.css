@@ -122,7 +122,7 @@
 .mandela-quote-mark { align-self:start; color:var(--berry); font:clamp(90px,13vw,160px)/.8 'Short Stack',cursive; }
 .mandela-quote-card blockquote { position:relative; z-index:1; margin:0; }
 .mandela-quote-card blockquote p { max-width:850px; margin:0 0 20px; font:clamp(25px,4vw,48px)/1.22 'Short Stack',cursive; }
-.mandela-quote-card blockquote p span { color:#a92363; text-decoration:underline; text-decoration-thickness:3px; text-underline-offset:6px; }
+.mandela-quote-card blockquote p span { color:#a92363; text-decoration:none; }
 .mandela-quote-card cite { display:block; font:800 13px/1.4 Arial,sans-serif; letter-spacing:.12em; text-transform:uppercase; font-style:normal; }
 .mandela-quote-spark { align-self:end; color:var(--leaf); font-size:clamp(34px,5vw,64px); transform:rotate(-12deg); }
 @media(max-width:600px) { .mandela-quote-section { padding:8px 0 25px; }.mandela-quote-card { grid-template-columns:auto 1fr; gap:.5rem; padding:25px 20px; border-radius:30px 14px 32px 16px; }.mandela-quote-mark { font-size:76px; }.mandela-quote-spark { grid-column:2; justify-self:end; font-size:30px; margin-top:-1.6rem; } }
@@ -354,3 +354,5 @@ a:focus-visible,button:focus-visible,summary:focus-visible,select:focus-visible 
 .enrol-interest-inner p:not(.eyebrow){max-width:690px;font:17px/1.5 Arial,sans-serif;margin:0}
 .enrol-interest-button{flex:none;background:var(--berry);color:#fff;border-color:var(--berry);padding:15px 22px}
 @media(max-width:650px){.enrol-interest-inner{align-items:flex-start;flex-direction:column;padding:23px}.enrol-interest-button{white-space:normal}}
+
+.mandela-quote-card blockquote p .mandela-quote-end { display:inline-block; margin-left:.08em; color:var(--berry); font:1.2em/0.8 'Short Stack',cursive; vertical-align:top; text-decoration:none; }
