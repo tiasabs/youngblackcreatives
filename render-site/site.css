@@ -314,3 +314,16 @@ a:focus-visible,button:focus-visible,summary:focus-visible,select:focus-visible 
 .suggestion-contact{background:var(--berry);border-color:var(--berry);color:white}
 @media(max-width:560px){.support-choice-grid{grid-template-columns:1fr}.support-choice{min-height:78px}.support-steps{gap:8px}.support-steps span{font-size:11px;padding:7px 9px}}
 @media(prefers-reduced-motion:reduce){.support-choice{transition:none}}
+
+/* Shared contact box across every page */
+.universal-contact{background:var(--leaf);color:var(--paper)}
+.universal-contact .eyebrow{color:var(--sun)}
+.universal-contact h2{max-width:780px}
+.universal-contact> .wrap > p:not(.eyebrow){max-width:690px;font:20px/1.5 Arial,sans-serif}
+.contact-methods{display:flex;flex-wrap:wrap;gap:16px;margin-top:25px}
+.contact-method{display:flex;flex-direction:column;align-items:flex-start;gap:9px;min-width:250px;padding:14px 16px;border:1px solid #ffffff80;border-radius:8px;background:#ffffff12}
+.universal-contact .contact-method .button{margin:0;background:var(--sun);color:var(--ink);border:2px solid var(--ink)}
+.universal-contact .contact-method .contact-phone-button{background:#e9aaca}
+.contact-address{color:#fff;font:700 14px/1.4 Arial,sans-serif;text-decoration:underline;text-underline-offset:3px;overflow-wrap:anywhere}
+.contact-method span.contact-address{text-decoration:none}
+@media(max-width:560px){.contact-methods{display:grid;grid-template-columns:1fr}.contact-method{min-width:0}}
