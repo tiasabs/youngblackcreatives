@@ -1,0 +1,6 @@
+services:
+  - type: web
+    name: young-black-creatives
+    runtime: static
+    buildCommand: ""
+    staticPublishPath: ./render-site
