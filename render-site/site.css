@@ -39,8 +39,8 @@
 .timeline-copy { align-self:center; padding:1.4rem; }
 .timeline-copy h3 { margin:.1rem 0 .6rem; font-size:1.55rem; }
 .timeline-copy p { margin:.5rem 0; }
-.timeline-entry-reverse .timeline-date { grid-column:2; justify-self:start; margin-left:-1.2rem; margin-right:0; background:#f4cb59; box-shadow:0 0 0 2px #f4cb59; }
-.timeline-entry-reverse .timeline-card { grid-column:1; }
+.timeline-entry:nth-child(even) .timeline-date { grid-column:2; justify-self:start; margin-left:-1.2rem; margin-right:0; background:#f4cb59; box-shadow:0 0 0 2px #f4cb59; }
+.timeline-entry:nth-child(even) .timeline-card { grid-column:1; }
 .timeline-tags { display:flex; flex-wrap:wrap; gap:.45rem; margin-top:1rem; }
 .timeline-tags span { display:inline-block; padding:.32rem .65rem; border-radius:2rem; background:#dbf0e7; font-size:.78rem; font-weight:700; }
 .timeline-entry:nth-child(3n) .timeline-date { background:#65c7c3; box-shadow:0 0 0 2px #65c7c3; }
@@ -50,9 +50,9 @@
 @media (max-width:800px) {
   .activity-path-inner { align-items:flex-start; flex-direction:column; }
   .project-timeline::before { left:1rem; }
-  .timeline-entry,.timeline-entry-reverse { display:block; padding-left:2.4rem; }
-  .timeline-date,.timeline-entry-reverse .timeline-date { display:table; margin:0 0 .8rem -.35rem; }
-  .timeline-card,.timeline-entry-reverse .timeline-card { grid-template-columns:1fr; }
+  .timeline-entry { display:block; padding-left:2.4rem; }
+  .timeline-date { display:table; margin:0 0 .8rem -.35rem; }
+  .timeline-card { grid-template-columns:1fr; }
   .timeline-image,.timeline-image img { height:15rem; min-height:15rem; }
 }
 @media (max-width:560px) {
