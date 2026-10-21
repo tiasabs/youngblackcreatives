@@ -347,3 +347,10 @@ a:focus-visible,button:focus-visible,summary:focus-visible,select:focus-visible 
 .contact-method span.contact-address{text-decoration:none}
 @media(max-width:800px){.contact-support-layout{grid-template-columns:1fr}.contact-support-copy{max-width:700px}.contact-support-details{max-width:700px}}
 @media(max-width:560px){.contact-methods{display:grid;grid-template-columns:1fr}.contact-method{min-width:0}}
+
+.enrol-interest{padding:54px 0;background:#e9aaca}
+.enrol-interest-inner{display:flex;align-items:center;justify-content:space-between;gap:30px;padding:28px 32px;background:#fffdf7;border:2px solid var(--ink);border-radius:2.5rem 1.2rem 2.5rem 1.8rem;box-shadow:7px 8px 0 var(--ink)}
+.enrol-interest-inner h2{max-width:700px;font-size:clamp(32px,4.8vw,54px);line-height:1.05;margin:0 0 12px}
+.enrol-interest-inner p:not(.eyebrow){max-width:690px;font:17px/1.5 Arial,sans-serif;margin:0}
+.enrol-interest-button{flex:none;background:var(--berry);color:#fff;border-color:var(--berry);padding:15px 22px}
+@media(max-width:650px){.enrol-interest-inner{align-items:flex-start;flex-direction:column;padding:23px}.enrol-interest-button{white-space:normal}}
