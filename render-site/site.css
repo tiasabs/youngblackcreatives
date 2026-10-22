@@ -423,4 +423,27 @@ a:focus-visible,button:focus-visible,summary:focus-visible,input:focus-visible,s
 .activity-photo-card h3{margin:0 0 9px;font-size:23px}
 .activity-photo-card p{margin:0;font-size:16px;line-height:1.65}
 @media(max-width:900px){.activities-list{grid-template-columns:repeat(2,minmax(0,1fr))}}
+
+/* Use white as the page canvas; retain the brand colors on cards and calls to action. */
+:root{--paper:#fff}
+body,.site-header,.founder-section,.scribble-band,.home-community,.home-support-section,.home-projects,.project-photo-gallery,.timeline-gallery,.partners-honest,.partners-network,.support-picker-section,.universal-contact,.current-sponsor-section,.home-enrollment,.privacy-content{background-color:#fff}
+.hero,.home-hero,.page-hero{background-color:#fff}
+.hero:before{background:linear-gradient(90deg,rgba(255,255,255,.97),rgba(255,255,255,.87) 58%,rgba(255,255,255,.5))}
+.page-hero:before{background:rgba(255,255,255,.82)}
+.home-hero{background-image:url('assets/doodle-pattern.svg')}
+.home-hero:before{background:linear-gradient(90deg,rgba(255,255,255,.96),rgba(255,255,255,.88) 55%,rgba(255,255,255,.6))}
+.timeline-hero{background:linear-gradient(110deg,#fff 0 53%,#f5cbe0 53%)}
+.support-hero{background:linear-gradient(105deg,#fff 0 59%,#d9eeeb 59%)}
+.support-picker-section,.home-community,.home-support-section,.home-projects,.project-photo-gallery,.timeline-gallery,.partners-network,.universal-contact,.current-sponsor-section,.home-enrollment{background-color:#fff}
+.timeline-image-collage,.activity-photo-card figure{background:#fff}
 @media(max-width:560px){.activities-list{grid-template-columns:1fr}}
+
+/* Keep section canvases white while preserving color on cards and controls. */
+section[class]{background:#fff}
+section[class]::before{background:none}
+.highlight{background:#fff;color:var(--ink)}
+.highlight .eyebrow{color:var(--leaf)}
+
+/* White section canvas with the colorful doodles still visible on the homepage. */
+.hero.home-hero{background-color:#fff;background-image:url('assets/doodle-pattern.svg');}
+.hero.home-hero::before{background:rgba(255,255,255,.16)}

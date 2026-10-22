@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 320" role="img" aria-labelledby="title desc">
+  <title id="title">Contribute to the studio</title>
+  <desc id="desc">A playful stack of South African rand coins, with colorful marks inspired by the studio.</desc>
+  <rect width="640" height="320" fill="#f4cf55"/>
+  <path d="M31 83c33-42 76-61 126-47 41 11 42 44 12 64-31 20-75 15-112 23-21 5-39-17-26-40Z" fill="#e8a8ca"/>
+  <path d="M485 35c43 5 84 28 89 60 4 28-37 42-74 32-41-11-52-55-15-81Z" fill="#9ed0cf"/>
+  <path d="M62 235c23-12 29-46 57-47 26-1 39 29 26 48-14 20-54 29-83 19" fill="none" stroke="#d84288" stroke-width="10" stroke-linecap="round"/>
+  <path d="m547 214 16 15 21-8-9 21 15 16-24-2-11 20-5-23-23-8 21-8Z" fill="#2d5540"/>
+  <g stroke="#171713" stroke-width="6" stroke-linejoin="round">
+    <ellipse cx="319" cy="245" rx="137" ry="37" fill="#bd583d"/>
+    <path d="M182 205v40c0 20 61 37 137 37s137-17 137-37v-40" fill="#e99a65"/>
+    <ellipse cx="319" cy="205" rx="137" ry="37" fill="#f4cf55"/>
+    <ellipse cx="319" cy="170" rx="115" ry="31" fill="#bd583d"/>
+    <path d="M204 137v33c0 17 51 31 115 31s115-14 115-31v-33" fill="#e99a65"/>
+    <ellipse cx="319" cy="137" rx="115" ry="31" fill="#f4cf55"/>
+    <ellipse cx="319" cy="107" rx="91" ry="26" fill="#bd583d"/>
+    <path d="M228 80v27c0 14 41 26 91 26s91-12 91-26V80" fill="#e99a65"/>
+    <ellipse cx="319" cy="80" rx="91" ry="26" fill="#f4cf55"/>
+  </g>
+  <g fill="#171713" font-family="Arial, sans-serif" font-weight="800" text-anchor="middle">
+    <text x="319" y="90" font-size="29">R</text>
+    <text x="319" y="148" font-size="32">R</text>
+    <text x="319" y="220" font-size="37">R</text>
+  </g>
+  <path d="m170 109 8 13 15 2-11 10 3 15-13-7-13 7 3-15-11-10 15-2Z" fill="#73c9d4" stroke="#171713" stroke-width="4" stroke-linejoin="round"/>
+  <circle cx="476" cy="150" r="12" fill="#8968b3" stroke="#171713" stroke-width="4"/>
+</svg>
