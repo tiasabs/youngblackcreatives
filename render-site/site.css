@@ -373,3 +373,6 @@ a:focus-visible,button:focus-visible,summary:focus-visible,select:focus-visible 
 .universal-contact .contact-shortcuts .contact-email-button{background:var(--berry);color:#fff;border-color:var(--ink)}
 .universal-contact .contact-shortcuts .contact-whatsapp-button{background:var(--sun);color:var(--ink);border-color:var(--ink)}
 @media(max-width:800px){.contact-support-details{padding:20px 0 0;border-left:0;border-top:2px solid #ffffff70}}
+
+.nav a.nav-home{padding:7px 14px;border:2px solid var(--ink);border-radius:10px 23px 10px 23px;background:var(--sun);color:var(--ink)}
+.nav a.nav-home:hover,.nav a.nav-home:focus-visible,.nav a.nav-home[aria-current="page"]{border-color:var(--berry);background:#f7d96c;color:var(--ink)}
