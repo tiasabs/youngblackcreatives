@@ -386,3 +386,6 @@ a:focus-visible,button:focus-visible,summary:focus-visible,select:focus-visible 
 .current-sponsor-card p:not(.eyebrow){max-width:590px;font:16px/1.5 Arial,sans-serif}
 .current-sponsor-link{background:var(--berry);color:#fff;border-color:var(--berry)}
 @media(max-width:620px){.current-sponsor-card{grid-template-columns:1fr;padding:18px;gap:18px}.current-sponsor-card img{height:260px}}
+
+.nav a.nav-home{padding:6px 1px;border:0;border-radius:0;background:transparent;color:var(--ink)}
+.nav a.nav-home:hover,.nav a.nav-home:focus-visible,.nav a.nav-home[aria-current="page"]{border:0;border-bottom:2px solid var(--berry);background:transparent;color:var(--ink)}
