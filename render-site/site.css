@@ -191,7 +191,7 @@ a:focus-visible,button:focus-visible,summary:focus-visible,select:focus-visible 
 
 .founder-interview{display:grid;grid-template-columns:minmax(0,.8fr) minmax(0,1.2fr);align-items:center;gap:32px;margin-top:56px;padding:28px;background:#fff;border:2px solid var(--ink);border-radius:28px;box-shadow:7px 8px 0 var(--ink)}
 .founder-interview-copy .section-title{margin-bottom:12px}
-.founder-interview-video{display:block;width:100%;max-height:560px;aspect-ratio:16/9;object-fit:contain;background:#171717;border-radius:20px}
+.founder-interview-video,.founder-interview-poster{display:block;width:100%;max-height:560px;aspect-ratio:16/9;background:#171717;border-radius:20px;overflow:hidden}.founder-interview-video{border:0}.founder-interview-poster{position:relative;text-decoration:none}.founder-interview-poster img{display:block;width:100%;height:100%;object-fit:cover}.founder-interview-play{position:absolute;top:50%;left:50%;display:grid;width:72px;height:72px;place-items:center;padding-left:5px;transform:translate(-50%,-50%);border:2px solid #fff;border-radius:50%;background:var(--berry);color:#fff;font:700 26px/1 Arial,sans-serif;box-shadow:4px 5px 0 var(--ink)}.founder-interview-poster:focus-visible{outline:3px solid var(--leaf);outline-offset:5px}
 @media(max-width:820px){.founder-interview{grid-template-columns:1fr;gap:18px;margin-top:36px;padding:18px}.founder-interview-video{aspect-ratio:16/9}}
 
 .home-projects{background:#fff9e9;padding-top:72px;padding-bottom:74px}
@@ -270,9 +270,8 @@ a:focus-visible,button:focus-visible,summary:focus-visible,select:focus-visible 
 .network-card-copy h3{font-size:25px;line-height:1.12;margin:0 0 10px}
 .network-card-copy p:not(.eyebrow){font:15px/1.55 Arial,sans-serif;margin:0 0 14px}
 .network-card-copy a{display:inline-block;color:#174c3a;font:700 13px/1.4 Arial,sans-serif;text-decoration-thickness:2px;text-underline-offset:3px}
-.network-card-stage{background:#f1c7dc}
+.network-card-sanusi{background:#f1c7dc}
 .partner-symbol{display:inline-flex;align-items:center;justify-content:center;width:44px;height:44px;margin-bottom:12px;border-radius:50%;background:#fff;border:2px solid var(--ink);font-size:26px}
-.network-card-art{display:flex;align-items:center;justify-content:center;gap:10px;min-height:144px;background:linear-gradient(130deg,#f4cf55 0 34%,#d84288 34% 67%,#9ed0cf 67%);font:900 clamp(18px,2vw,27px)/1 Arial,sans-serif;letter-spacing:.03em;color:#171713;text-shadow:2px 2px #fff}
 .partner-note{margin:28px 0 0;font:13px/1.5 Arial,sans-serif;color:#55534c}
 @media(max-width:900px){.partners-card-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
 @media(max-width:620px){.honest-photo-grid{grid-template-columns:1fr;grid-template-rows:auto}.partner-photo-wide{grid-row:auto}.partner-photo-wide img{min-height:260px}.honest-photo-grid .partner-photo:not(.partner-photo-wide) img{height:250px}.honest-logo-tile{min-height:160px}.partners-card-grid{grid-template-columns:1fr}.network-card{transform:none}.network-card>img{height:240px}}

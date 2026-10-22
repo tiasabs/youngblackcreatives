@@ -74,10 +74,10 @@
           <h2 class="section-title">The story behind the space.</h2>
           <p class="copy" id="founder-interview-description">Lungiswa shares how a ceramics studio became a welcoming place for children to make, learn and grow.</p>
         </div>
-        <video class="founder-interview-video" controls preload="none" playsinline poster="assets/images/founder-interview-poster.jpg" aria-label="Interview with founder Lungiswa Joe" aria-describedby="founder-interview-description">
-          <source src="assets/videos/lungiswa-ybc-interview.mp4" type="video/mp4">
-          Your browser does not support the video player. You can <a href="assets/videos/lungiswa-ybc-interview.mp4">download the interview video</a>.
-        </video>
+        <a class="founder-interview-poster" href="https://youtu.be/N8T4CAtWcYE" data-youtube-id="N8T4CAtWcYE" aria-label="Play the founder interview on YouTube">
+          <img src="assets/images/founder-interview-poster.jpg" alt="">
+          <span class="founder-interview-play" aria-hidden="true">▶</span>
+        </a>
       </div>
     </section>
 
@@ -95,5 +95,20 @@
       <nav class="footer-nav" aria-label="Footer navigation"><a href="about-us.html">About Us</a><a href="activities.html">Activities</a><a href="recent-projects.html">Recent Projects</a><a href="our-partners.html">Our Partners</a><a href="support-us.html">Support Us</a><a href="privacy-child-safety.html">Privacy &amp; child safety</a></nav>
     </div></div>
   </footer>
+  <script>
+    document.querySelectorAll('.founder-interview-poster[data-youtube-id]').forEach((poster) => {
+      poster.addEventListener('click', (event) => {
+        event.preventDefault();
+        const player = document.createElement('iframe');
+        player.className = 'founder-interview-video';
+        player.title = 'Conversation with the founder of Young Black Creatives';
+        player.src = `https://www.youtube-nocookie.com/embed/${poster.dataset.youtubeId}?autoplay=1&rel=0`;
+        player.allow = 'accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share';
+        player.allowFullscreen = true;
+        player.referrerPolicy = 'strict-origin-when-cross-origin';
+        poster.replaceWith(player);
+      });
+    });
+  </script>
 </body>
 </html>
