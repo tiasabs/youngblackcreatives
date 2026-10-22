@@ -360,3 +360,19 @@ a:focus-visible,button:focus-visible,summary:focus-visible,select:focus-visible 
 /* Keep the portrait garden photo focused on the children and planting wall */
 .timeline-entry#vertical-garden-2026 .timeline-image img{object-position:center 28%}
 .project-photo-card:nth-child(2) .project-photo-link img{object-position:center 28%}
+
+/* Keep contribution and contact actions inside one shared panel */
+.universal-contact{padding:48px 0;background:#f5eddc}
+.contact-support-layout{position:relative;isolation:isolate;overflow:hidden;grid-template-columns:1fr 1fr;gap:clamp(28px,5vw,58px);padding:clamp(28px,5vw,58px);border:2px solid var(--ink);border-radius:38px 18px 42px 20px;background:var(--leaf);box-shadow:8px 9px 0 var(--ink)}
+.contact-support-layout::after{position:absolute;z-index:-1;right:-52px;top:-67px;width:190px;height:190px;border:12px solid var(--sky);border-radius:43% 57% 49% 51%;opacity:.24;content:"";transform:rotate(25deg)}
+.contact-support-copy{padding:0;background:transparent;color:var(--paper);border:0;box-shadow:none;transform:none}
+.contact-support-copy .eyebrow{color:var(--sun)}
+.contact-support-copy h2{font-size:clamp(34px,4vw,52px)}
+.contact-support-copy p:not(.eyebrow){font:17px/1.5 Arial,sans-serif}
+.contact-support-details{padding-left:clamp(18px,3vw,38px);border-left:2px solid #ffffff70}
+.contact-support-details h3{max-width:480px}
+.contact-support-details>p{max-width:500px}
+.contact-method{min-width:0;padding:0;border:0;border-radius:0;background:transparent}
+.universal-contact .contact-method .button{min-height:46px}
+@media(max-width:800px){.contact-support-layout{grid-template-columns:1fr;gap:22px}.contact-support-details{padding:20px 0 0;border-left:0;border-top:2px solid #ffffff70}}
+@media(max-width:560px){.universal-contact{padding:34px 0}.contact-support-layout{padding:23px 20px;border-radius:28px 15px 30px 16px}}
