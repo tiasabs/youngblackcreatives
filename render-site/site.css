@@ -356,3 +356,7 @@ a:focus-visible,button:focus-visible,summary:focus-visible,select:focus-visible 
 @media(max-width:650px){.enrol-interest-inner{align-items:flex-start;flex-direction:column;padding:23px}.enrol-interest-button{white-space:normal}}
 
 .mandela-quote-card blockquote p .mandela-quote-end { display:inline-block; margin-left:.08em; color:var(--berry); font:1.2em/0.8 'Short Stack',cursive; vertical-align:top; text-decoration:none; }
+
+/* Keep the portrait garden photo focused on the children and planting wall */
+.timeline-entry#vertical-garden-2026 .timeline-image img{object-position:center 28%}
+.project-photo-card:nth-child(2) .project-photo-link img{object-position:center 28%}
