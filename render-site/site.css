@@ -376,3 +376,13 @@ a:focus-visible,button:focus-visible,summary:focus-visible,select:focus-visible 
 
 .nav a.nav-home{padding:7px 14px;border:2px solid var(--ink);border-radius:10px 23px 10px 23px;background:var(--sun);color:var(--ink)}
 .nav a.nav-home:hover,.nav a.nav-home:focus-visible,.nav a.nav-home[aria-current="page"]{border-color:var(--berry);background:#f7d96c;color:var(--ink)}
+
+.current-sponsor-section{padding:38px 0;background:#f5eddc}
+.current-sponsor-card{display:grid;grid-template-columns:minmax(180px,.55fr) 1.45fr;align-items:center;gap:30px;max-width:980px;padding:20px 24px;background:#fffdf7;border:2px solid var(--ink);border-radius:25px 14px 28px 16px;box-shadow:6px 7px 0 var(--ink)}
+.current-sponsor-card figure{margin:0;overflow:hidden;border:2px solid var(--ink)}
+.current-sponsor-card img{display:block;width:100%;height:220px;object-fit:cover;object-position:center 38%}
+.current-sponsor-card .eyebrow{margin-bottom:8px;color:var(--leaf)}
+.current-sponsor-card h2{font-size:clamp(30px,4vw,44px);margin:0 0 9px}
+.current-sponsor-card p:not(.eyebrow){max-width:590px;font:16px/1.5 Arial,sans-serif}
+.current-sponsor-link{background:var(--berry);color:#fff;border-color:var(--berry)}
+@media(max-width:620px){.current-sponsor-card{grid-template-columns:1fr;padding:18px;gap:18px}.current-sponsor-card img{height:260px}}
