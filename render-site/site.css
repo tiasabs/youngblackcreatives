@@ -460,3 +460,6 @@ main>section[class]{background-color:#fff}
 main>section+section{border-top:1px solid #e6e2d9}
 main>.section{padding-block:clamp(60px,7vw,88px)}
 .section-title::after{content:"";display:block;width:48px;height:4px;margin-top:15px;border-radius:99px;background:linear-gradient(90deg,var(--berry),var(--sun),var(--sky))}
+
+/* Remove section-wide rules; retain spacing and heading accents. */
+main>section+section{border-top:0}
