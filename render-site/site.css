@@ -447,3 +447,6 @@ section[class]::before{background:none}
 /* White section canvas with the colorful doodles still visible on the homepage. */
 .hero.home-hero{background-color:#fff;background-image:url('assets/doodle-pattern.svg');}
 .hero.home-hero::before{background:rgba(255,255,255,.16)}
+
+/* Keep the hero doodles decorative and give its text a clean, readable wash. */
+.hero.home-hero::before{background:rgba(255,255,255,.78)}
