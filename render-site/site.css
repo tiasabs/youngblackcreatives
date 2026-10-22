@@ -450,3 +450,7 @@ section[class]::before{background:none}
 
 /* Keep the hero doodles decorative and give its text a clean, readable wash. */
 .hero.home-hero::before{background:rgba(255,255,255,.78)}
+
+/* Restore the doodle artwork on interior page heroes over a white canvas. */
+section.page-hero{background:#fff url('assets/doodle-pattern.svg') center/cover no-repeat}
+section.page-hero::before{background:rgba(255,255,255,.78)}
