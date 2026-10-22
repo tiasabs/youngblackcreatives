@@ -409,12 +409,15 @@ a:focus-visible,button:focus-visible,summary:focus-visible,input:focus-visible,s
 .privacy-contact-links{display:flex;flex-wrap:wrap;gap:18px}
 .privacy-contact-links a{color:var(--leaf);font-weight:800;text-underline-offset:4px}
 @media(max-width:720px){.home-enrollment-inner{align-items:flex-start;flex-direction:column}.privacy-layout{grid-template-columns:1fr}.privacy-layout article:last-child{grid-column:auto}}
-.activities-list{grid-template-columns:repeat(3,minmax(0,1fr));gap:22px;align-items:start}
+.activities-list{grid-template-columns:repeat(3,minmax(0,1fr));gap:22px;align-items:stretch}
 .activity-photo-card{overflow:hidden;border:2px solid var(--ink);background:#fff;box-shadow:5px 6px 0 var(--ink)}
 .activity-photo-card:nth-child(3n+2){background:#fae9ac}
 .activity-photo-card:nth-child(3n){background:#eec2d7}
 .activity-photo-card figure{margin:0;border-bottom:2px solid var(--ink);background:#f5eddc}
-.activity-photo-card figure img{display:block;width:100%;height:auto;object-fit:contain}
+.activity-photo-card figure img{display:block;width:100%;height:auto;aspect-ratio:4/3;object-fit:cover;object-position:center}
+.activity-photo-card:nth-child(1) figure img{object-position:60% center}
+.activity-photo-card:nth-child(2) figure img{object-position:center 55%}
+.activity-photo-card:nth-child(7) figure img{object-position:center 45%}
 .activity-photo-card figcaption{padding:8px 14px;background:var(--paper);font-size:13px;line-height:1.45;font-weight:700}
 .activity-photo-card>div{padding:20px}
 .activity-photo-card h3{margin:0 0 9px;font-size:23px}
