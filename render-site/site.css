@@ -416,6 +416,7 @@ a:focus-visible,button:focus-visible,summary:focus-visible,input:focus-visible,s
 .activity-photo-card figure img{display:block;width:100%;height:auto;aspect-ratio:4/3;object-fit:cover;object-position:center}
 .activity-photo-card:nth-child(1) figure img{object-position:60% center}
 .activity-photo-card:nth-child(2) figure img{object-position:center 55%}
+.activity-photo-card:nth-child(4) figure img{object-position:center 36%}
 .activity-photo-card:nth-child(7) figure img{object-position:center 45%}
 .activity-photo-card figcaption{padding:8px 14px;background:var(--paper);font-size:13px;line-height:1.45;font-weight:700}
 .activity-photo-card>div{padding:20px}
